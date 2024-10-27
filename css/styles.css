@@ -1,0 +1,151 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000; /* Fondo negro */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000; /* Fondo negro */
+}
+
+header {
+    background: linear-gradient(to bottom, #000000, #1a1a1a); /* Fondo degradado */
+    color: white; /* Texto en blanco */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between; /* Distribución alineada */
+    align-items: center; /* Centrado vertical */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+}
+
+.balance-icon {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #87CEEB; /* Color celeste */
+    border-top: none;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px; /* Espacio entre icono y texto */
+}
+
+.balance-icon::before,
+.balance-icon::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background-color: #87CEEB; /* Color celeste */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.balance-icon::before {
+    transform: rotate(45deg);
+}
+
+.balance-icon::after {
+    transform: rotate(-45deg);
+}
+
+.logo h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía más delicada */
+    font-size: 2rem; /* Tamaño del texto */
+}
+
+nav {
+    flex: 1; /* Ocupa el espacio restante */
+    text-align: right; /* Alineación de los enlaces a la derecha */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Eliminar el margen */
+}
+
+nav ul li {
+    display: inline-block; /* Mostrar los elementos en línea */
+    margin-left: 15px; /* Espacio entre elementos */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Sin margen izquierdo para el primer elemento */
+}
+
+nav ul li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía más delicada */
+    font-size: 0.9rem; /* Tamaño más pequeño */
+    color: #87CEEB; /* Color celeste */
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    color: white; /* Color blanco al pasar el cursor */
+    transform: scale(1.1); /* Escalar ligeramente al hover */
+}
+
+main {
+    padding: 2rem;
+    background-color: #000; /* Fondo negro */
+}
+
+.carousel-inner {
+    background-color: #000; /* Fondo negro */
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 500px; /* Altura fija */
+    object-fit: cover; /* Ajuste de imagen */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    color: white; /* Color del texto */
+    font-size: 1.2rem; /* Tamaño del texto */
+    display: flex; /* Alineación vertical centrada */
+    align-items: center; /* Alinear elementos verticalmente */
+}
+
+.carousel-caption h5 {
+    font-size: 2rem; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio inferior del título */
+}
+
+.carousel-caption .smaller-text {
+    font-size: 1rem; /* Tamaño del texto más pequeño */
+}
+
+.btn-custom {
+    background-color: #000; /* Fondo negro */
+    color: #87CEEB; /* Letras celestes */
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #87CEEB; /* Fondo celeste al pasar el cursor */
+    color: white; /* Letras blancas al pasar el cursor */
+}
+
+footer {
+    background-color: #000; /* Negro */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
