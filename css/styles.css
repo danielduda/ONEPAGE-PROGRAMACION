@@ -266,10 +266,6 @@ footer {
         }
 
 
-
-
-
-
 /* sección exposiciones */
 #exposiciones{
     background-color: #000;
@@ -442,5 +438,56 @@ footer {
     padding: 7px 25px;
     border-radius: 30px;
     cursor: pointer;
+}
+
+ /*footer*/
+
+.derechos-de-autor{
+    font-size: 15px;
+}
+
+.iconos-redes i:hover{
+    transform: scale(1.2, 1.2); /* 150% horizontal, 80% vertical */
+}
+
+.nosotros img{
+    opacity: 80%;
+}
+
+.contenedor-nosotros{
+    background-color: #fdfcfc;
+    padding: 100px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.imagen-nosotros{
+    background-image: url(../img/fondo-skills.jpg);
+}
+
+.texto-nosotros{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: lightblue;
+}
+
+
+.contenedor-nosotros2 {
+    background-color: rgb(1, 1, 1);
+    padding: 100px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+}
+.imagen-nosotros2 {
+    background-image: url(../img/2885170.jpg);
 }
 
