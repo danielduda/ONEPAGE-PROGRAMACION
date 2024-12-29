@@ -416,15 +416,18 @@ footer {
     display: block;
     width: 100px;
     border-radius: 50%;
-    border: 2px solid #ff8f46   ;
+    border: 4px solid purple;
     margin-right: 30px;
+    
 }
+
 .galeria-blog .gallery-cell h3{
     margin-bottom: 7px;
 }
 .galeria-blog .gallery-cell p{
-    color: #a8a8a8;
+    color: lightblue;
     font-style: italic;
+    font-family: 'Lato', sans-serif;
 }
 #blog button{
     display: block;
@@ -433,13 +436,69 @@ footer {
     margin-top: 20px;
     font-size: 20px;
     border:none;
-    background-color: #ff8f46;
-    color: #fff;
+    background-color: purple;
+    color: lightblue;
     padding: 7px 25px;
     border-radius: 30px;
     cursor: pointer;
 }
 
+.info h3{
+   color: purple; 
+   font-family: 'Lato', sans-serif;
+   font-weight: 900;
+}
+#blog h2 {
+    color: purple;
+    font-family: 'Roboto Slab', serif;
+}
+
+.contenedor-blog {
+   
+    background-image: url(../img/2885170.jpg);
+    background-color: rgb(1, 1, 1);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+
+}
+.info h3:hover{
+    color: bisque; 
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+ }
+ .info a {
+    text-decoration: none;
+ }
+
+ #blog .animated-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: purple;
+    text-align: center;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
+    animation: glow 3s infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+      text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.7);
+    }
+  }
+
+ 
+ 
+ 
  /*footer*/
 
 .derechos-de-autor{
@@ -454,24 +513,9 @@ footer {
     opacity: 80%;
 }
 
-.contenedor-nosotros{
-    background-color: #fdfcfc;
-    padding: 100px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
-    transition: transform 0.3s ease-in-out;
-    background-size: cover;
-    background-position: center;
-}
-
-
-.imagen-nosotros{
-    background-image: url(../img/fondo-skills.jpg);
-}
 
 .texto-nosotros{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lato', sans-serif;
     font-size: 25px;
     color: lightblue;
 }
@@ -479,7 +523,7 @@ footer {
 
 .contenedor-nosotros2 {
     background-color: rgb(1, 1, 1);
-    padding: 100px;
+    padding: 25px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);

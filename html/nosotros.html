@@ -9,6 +9,11 @@
   <!--favicon /ícono que puede ir al lado del título en la pestaña-->
   <link rel="icon" type="image/x-icon" href="#">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <title>Nosotros</title>
 </head>
 
@@ -38,7 +43,8 @@
         <div class="contenedor-nosotros imagen-nosotros" style="margin-top: -75px;">
 
         </div>
-        <p align="justify" class="texto-nosotros contenedor-nosotros2 imagen-nosotros2">Somos un equipo de desarrolladores web de Argentina, con sede en CABA.
+        <p align="justify" class="texto-nosotros contenedor-nosotros2 imagen-nosotros2">Somos un equipo de
+          desarrolladores web de Argentina, con sede en CABA.
           Desde su concepción, este emprendimiento tiene como objetivo llevar la visión de nuestros
           clientes lo más lejos posible. En Equigestión, comprendemos tus necesidades y te ofrecemos
           una atención cálida y personalizada. Nuestros especialistas estarán a tu lado en cada etapa
@@ -49,67 +55,77 @@
 
       </section>
 
-         <!-- SECCION BLOG -->
-    <section id="blog">
-      <h2>Blog</h2>
-      <div class="galeria-blog js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": true}'>
-          <div class="gallery-cell" >
-              <div class="item">
-                  <div class="foto">
-                      <img src="../img/cheff1.jpg" alt="">
-                  </div>
-                  <div class="info">
-                      <h3>El arte de cocinar</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repudiandae est maxime quam alias asperiores.</p>
-                  </div>
+      <!-- SECCION BLOG -->
+       <div class="contenedor-blog">
+      <section id="blog">
+        <h2 class="animated-title">STAFF</h2>
+        <div class="galeria-blog js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": true}'>
+          <div class="gallery-cell">
+            <div class="item">
+              <div class="foto">
+                
+                <img src="../img/matias.jpeg" alt="">
+              </a>
               </div>
-          </div>
-          <div class="gallery-cell" >
-              <div class="item">
-                  <div class="foto">
-                      <img src="../img/cheff2.jpg" alt="">
-                  </div>
-                  <div class="info">
-                      <h3>¿Donde estudiar cocina?</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repudiandae est maxime quam alias asperiores culpa minus corporis neque hic sunt dolore.</p>
-                  </div>
+              <div class="info">
+                <a href="https://github.com/lombardimatias" target="_blank">
+                <h3>Lombardi, Matias / Full stack developer</h3>
+              </a>
+                <p align="justify">Mi pasión por la informática me ha llevado a adquirir un amplio conocimiento en diversas tecnologías, tanto de manera autodidacta como mediante cursos especializados.</p>
               </div>
+            </div>
           </div>
-          <div class="gallery-cell" >
-              <div class="item">
-                  <div class="foto">
-                      <img src="../img/cheff3.jpg" alt="">
-                  </div>
-                  <div class="info">
-                      <h3>La cocina del 2023</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, repudiandae est maxime quam alias asperiores culpa.</p>
-                  </div>
+          <div class="gallery-cell">
+            <div class="item">
+              <div class="foto">
+                
+                <img src="../img/daniel.jpeg" alt="">
+              </a>
               </div>
+              <div class="info">
+                <a href="https://github.com/danielduda" target="_blank">
+                <h3>Duda, Daniel / Full stack developer</h3>
+              </a>
+                <p align="justify">Gracias a mi interés por la informática, he logrado dominar una variedad de tecnologías, combinando el aprendizaje autónomo con la formación en cursos especializados.</p>
+              </div>
+            </div>
           </div>
-      </div>
-      <button>Leer Más</button>
-  </section>
+        </div>
+        
 
-
-
-
+      </section>
+    </div>
 
     </main>
-
-
-
-
 
   </div>
 
   <footer>
-    <p class="derechos-de-autor">Diseñado por Xgestión 2024 en colaboración de <a href="https://www.freepik.es/">freepik</a>&#169;</p>
+    <div class="iconos-redes">
+      <!-- Ícono de WhatsApp -->
+      <a href="https://api.whatsapp.com/send/?phone=5491127393676&text=Hola%2C+Equigesti%C3%B3n%21+Quisiera+obtener+m%C3%A1s+informaci%C3%B3n+sobre+sus+planes+y+servicios.&type=phone_number&app_absent=0" target="_blank">
+          <i class="fab fa-whatsapp" style="font-size: 30px; color: #25D366;margin:5px;"></i>
+      </a>
+  
+      <!-- Ícono de Instagram -->
+      <a href="https://www.instagram.com/xgestion/" target="_blank">
+          <i class="fab fa-instagram" style="font-size: 30px; color: #E4405F; margin:5px;"></i>
+      </a>
+  
+      <!-- Ícono de Email -->
+      <a href="mailto:xgestionprogramacion@gmail.com">
+          <i class="fas fa-envelope" style="font-size: 30px; color: #007BFF;margin:5px;"></i>
+      </a>
+  </div>
+    <p class="derechos-de-autor">Diseñado por Xgestión 2024 en colaboración de <a
+        href="https://www.freepik.es/">freepik</a>&#169;</p>
 
-</footer>
+  </footer>
 
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 
 </html>
