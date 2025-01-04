@@ -529,7 +529,47 @@ footer {
     }
   }
 
- 
+/* From Uiverse.io by TCdesign-dev */ 
+.button_cv {
+    display: inline-block;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    font-family: inherit;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 8px 8px 16px lightblue,
+    -8px -8px 16px #ffffff;
+    width: 10em;
+    padding: 1em;
+    transition: all 0.4s;
+    cursor: pointer;
+   }
+   
+   .button_cv span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+   }
+   
+   .button_cv span:after {
+    content:'CV';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -40px;
+    transition: 0.7s;
+   }
+   
+   .button_cv:hover span {
+    padding-right: 1.72em;
+   }
+   
+   .button_cv:hover span:after {
+    opacity: 4;
+    right: 0;
+   }
  
  
  /*footer*/
