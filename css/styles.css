@@ -13,99 +13,107 @@ body, html {
     background-color: #000; /* Fondo negro */
 }
 
+/* ENCABEZADO */
 header {
-    background: linear-gradient(to bottom, #000000, #1a1a1a); /* Fondo degradado */
-    color: white; /* Texto en blanco */
+    background: linear-gradient(to bottom, #000000, #1a1a1a);
+    color: white;
     padding: 1rem;
     display: flex;
-    justify-content: space-between; /* Distribución alineada */
-    align-items: center; /* Centrado vertical */
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Asegura que los elementos se posicionen dentro del header */
 }
 
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+/* ICONO DEL LOGO */
 .balance-icon {
-    max-width: 5rem;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #87CEEB;
+    border-top: none;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
     animation: girar 5s linear infinite;
 }
+
 @keyframes girar {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
 
-.logo {
-    display: flex;
-    align-items: center; /* Centrar verticalmente */
-}
-
-.balance-icon {
-    width: 30px;
-    height: 30px;
-    border: 2px solid #87CEEB; /* Color celeste */
-    border-top: none;
-    border-radius: 50%;
-    position: relative;
-    margin-right: 10px; /* Espacio entre icono y texto */
-}
-
-/*dibuja una x en el círculo*/
+/* X dentro del círculo */
 .balance-icon::before,
 .balance-icon::after {
     content: '';
     position: absolute;
     width: 12px;
     height: 2px;
-    background-color: #87CEEB; /* Color celeste */
+    background-color: #87CEEB;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.balance-icon::before {
-    transform: rotate(45deg);
-}
+.balance-icon::before { transform: rotate(45deg); }
+.balance-icon::after { transform: rotate(-45deg); }
 
-.balance-icon::after {
-    transform: rotate(-45deg);
-}
-
-.logo h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía más delicada */
-    font-size: 2rem; /* Tamaño del texto */
-}
-
+/* MENU */
 nav {
-    flex: 1; /* Ocupa el espacio restante */
-    text-align: right; /* Alineación de los enlaces a la derecha */
+    display: flex;
+    align-items: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0; /* Eliminar el margen */
+/* Botón del menú hamburguesa */
+.menu-toggle {
+    display: none; /* Oculto por defecto en escritorio */
+    background: none;
+    border: none;
+    color: #87CEEB;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+/* Lista de enlaces */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 
 nav ul li {
-    display: inline-block; /* Mostrar los elementos en línea */
-    margin-left: 15px; /* Espacio entre elementos */
-    text-decoration: none;
-    cursor: pointer;
+    margin-left: 15px;
 }
 
-nav ul li:first-child {
-    margin-left: 0; /* Sin margen izquierdo para el primer elemento */
-}
-
+/* Enlaces del menú */
 nav ul li a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía más delicada */
-    font-size: 0.9rem; /* Tamaño más pequeño */
-    color: #87CEEB; /* Color celeste */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: #87CEEB;
     text-decoration: none;
-    transition: color 0.3s, transform 0.2s;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: white; /* Color blanco al pasar el cursor */
-    transform: scale(1.1); /* Escalar ligeramente al hover */
+    color: white;
 }
+
 
 main {
     padding: 2rem;
@@ -649,23 +657,168 @@ footer {
 /*Sección responsiva */
 
 
-/* Menú hamburguesa oculto en PC y visible en móviles */
-.menu-toggle {
-    display: none;
-    font-size: 28px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-/* Responsividad */
-
-
 @media (max-width: 1024px) {
     /* Ajustes para tablets */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .carousel-caption {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    #servicios .fila {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #servicios .fila .servicio {
+        max-width: 45%;
+        margin: 10px;
+    }
+
+    #exposiciones .fila {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #exposiciones .fila .col {
+        max-width: 45%;
+        margin: 10px;
+    }
+    .proyecto .info .titulo-descripcion {
+        font-size: 14px; /* Reducir tamaño de título */
+    }
+
+    .proyecto .info p {
+        font-size: 12px; /* Reducir tamaño del párrafo */
+    }
+
+    .proyecto .info i {
+        font-size: 12px; /* Ajustar tamaño del icono */
+    }
 }
 
 @media (max-width: 768px) {
     /* Ajustes para celulares */
+    .wrapper {
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 0.5rem;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    #servicios .fila .servicio {
+        max-width: 100%;
+    }
+
+    #exposiciones .fila .col {
+        max-width: 100%;
+    }
+
+
+    #portfolio .fila {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas siempre */
+        gap: 10px; /* Espaciado entre elementos */
+        justify-content: center;
+    }
+
+    #portfolio .fila .proyecto {
+        width: 100%;
+    }
+
+    /* Para evitar que haya elementos sueltos en una fila */
+    #portfolio .fila .proyecto:nth-child(odd):last-child {
+        grid-column: span 2; /* Si hay un solo elemento en la última fila, ocupará toda la fila */
+        justify-self: center;
+    }
+    
+    .proyecto .info .titulo-descripcion {
+        font-size: 10px; /* Reducir tamaño de título */
+    }
+
+    .proyecto .info p {
+        font-size: 10px; /* Reducir tamaño del párrafo */
+    }
+
+    .proyecto .info i {
+        font-size: 20px; /* Ajustar tamaño del icono */
+    }
+
+    .menu-toggle {
+        display: block; /* Se muestra en móviles */
+    
+    }
+
+    nav ul {
+        display: none; /* Ocultar menú por defecto */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #222;
+        flex-direction: column;
+        width: 200px;
+        padding: 10px;
+        z-index: 99;
+    }
+
+    nav ul.show {
+        display: flex; /* Mostrar menú al hacer clic */
+    }
+
+}
+
+/* Ajuste para pantallas muy pequeñas (teléfonos pequeños) */
+@media screen and (max-width: 480px) {
+    .proyecto .info .titulo-descripcion {
+        font-size: 12px;
+    }
+
+    .proyecto .info p {
+        font-size: 10px;
+    }
+
+    .proyecto .info i {
+        font-size: 25px;
+    }
 }
