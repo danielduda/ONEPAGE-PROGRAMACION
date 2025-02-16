@@ -606,9 +606,6 @@ footer {
 }
 
 
-
-
-
 .contenedor-blog {
    
     background-image: url(../img/2885170.jpg);
@@ -647,4 +644,28 @@ footer {
 .modal-dialog{
     border: 2px solid lightblue;
 
+}
+
+/*Sección responsiva */
+
+
+/* Menú hamburguesa oculto en PC y visible en móviles */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsividad */
+
+
+@media (max-width: 1024px) {
+    /* Ajustes para tablets */
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para celulares */
 }
