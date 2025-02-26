@@ -1,3 +1,5 @@
+
+ /*general*/
 body,
 html {
     margin: 0;
@@ -16,7 +18,7 @@ html {
     /* Fondo negro */
 }
 
-/* ENCABEZADO */
+/* Encabezado */
 header {
     background: linear-gradient(to bottom, #000000, #1a1a1a);
     color: white;
@@ -28,7 +30,7 @@ header {
     /* Asegura que los elementos se posicionen dentro del header */
 }
 
-/* LOGO */
+/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -39,7 +41,7 @@ header {
     font-size: 2rem;
 }
 
-/* ICONO DEL LOGO */
+/* Icono del logo */
 .balance-icon {
     width: 30px;
     height: 30px;
@@ -51,6 +53,7 @@ header {
     animation: girar 5s linear infinite;
 }
 
+/*Animacion del logo */
 @keyframes girar {
     from {
         transform: rotate(0deg);
@@ -82,7 +85,9 @@ header {
     transform: rotate(-45deg);
 }
 
-/* MENU */
+
+/* Menu*/
+
 nav {
     display: flex;
     align-items: center;
@@ -203,9 +208,6 @@ footer {
 
 /*servicios*/
 
-/* *********************/
-/* seccion S E R V I C I O S */
-/* *********************/
 
 #servicios {
     padding: 100px 15px;
@@ -298,7 +300,8 @@ footer {
 }
 
 
-/* sección exposiciones */
+
+/* Planes */
 #exposiciones {
     background-color: #000;
     padding: 100px 0;
@@ -367,14 +370,39 @@ footer {
 
 
 
+/*estilo del modal */
 
+.modal-body {
+    background-image: url(../img/2885170.jpg);
+    background-size: cover;
+    background-position: center;
+    color: lightblue;
+    font-family: 'Lato', sans-serif;
 
+}
+
+.modal-header {
+
+    background-color: black;
+
+}
+
+.modal-title {
+    color: rgb(174, 24, 243);
+}
+
+.modal-footer {
+    background-color: black;
+}
+
+.modal-dialog {
+    border: 2px solid lightblue;
+
+}
 
 
 /*proyectos*/
-/* *********************/
-/* seccion P O R T F O L I O */
-/* *********************/
+
 
 #portfolio {
     max-width: 1100px;
@@ -473,10 +501,6 @@ footer {
 
 /*Seccion nosotros*/
 
-
-/* ***************** */
-/* SECCION B L O G*/
-/* ***************** */
 #blog {
     padding: 50px 0;
 }
@@ -567,80 +591,7 @@ footer {
     text-decoration: none;
 }
 
-#blog .animated-title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: purple;
-    text-align: center;
-    position: relative;
-    font-family: 'Arial', sans-serif;
-    letter-spacing: 2px;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
-    animation: glow 3s infinite alternate;
-}
-
-@keyframes glow {
-    0% {
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
-    }
-
-    100% {
-        text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.7);
-    }
-}
-
-/* From Uiverse.io by TCdesign-dev */
-.button_cv {
-    display: inline-block;
-    border-radius: 7px;
-    border: none;
-    color: white;
-    font-family: inherit;
-    text-align: center;
-    font-size: 15px;
-    width: 10em;
-    padding: 1em;
-    transition: all 0.4s;
-    cursor: pointer;
-}
-
-.button_cv span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.4s;
-}
-
-.button_cv span:after {
-    content: 'CV';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -40px;
-    transition: 0.7s;
-}
-
-.button_cv:hover span {
-    padding-right: 1.72em;
-}
-
-.button_cv:hover span:after {
-    opacity: 4;
-    right: 0;
-}
-
-
-/*footer*/
-
-.derechos-de-autor {
-    font-size: 15px;
-}
-
-.iconos-redes i:hover {
-    transform: scale(1.2, 1.2);
-    /* 150% horizontal, 80% vertical */
-}
-
+/*estilo contenedor "somos un equipo" */
 .nosotros img {
     opacity: 80%;
 }
@@ -683,33 +634,84 @@ footer {
 
 }
 
-.modal-body {
-    background-image: url(../img/2885170.jpg);
-    background-size: cover;
-    background-position: center;
-    color: lightblue;
-    font-family: 'Lato', sans-serif;
-
+/*animacion staff */
+#blog .animated-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: purple;
+    text-align: center;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
+    animation: glow 3s infinite alternate;
 }
 
-.modal-header {
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
+    }
 
-    background-color: black;
-
+    100% {
+        text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.7);
+    }
 }
 
-.modal-title {
-    color: rgb(174, 24, 243);
+/* Botón cv estilo y animación */
+.button_cv {
+    display: inline-block;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    font-family: inherit;
+    text-align: center;
+    font-size: 15px;
+    width: 10em;
+    padding: 1em;
+    transition: all 0.4s;
+    cursor: pointer;
 }
 
-.modal-footer {
-    background-color: black;
+.button_cv span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
 }
 
-.modal-dialog {
-    border: 2px solid lightblue;
-
+.button_cv span:after {
+    content: 'CV';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -40px;
+    transition: 0.7s;
 }
+
+.button_cv:hover span {
+    padding-right: 1.72em;
+}
+
+.button_cv:hover span:after {
+    opacity: 4;
+    right: 0;
+}
+
+
+
+/*footer*/
+
+.derechos-de-autor {
+    font-size: 15px;
+}
+
+.iconos-redes i:hover {
+    transform: scale(1.2, 1.2);
+    /* 150% horizontal, 80% vertical */
+}
+
+
+
 
 /*Sección responsiva */
 
@@ -773,6 +775,9 @@ footer {
         /* Ajustar tamaño del icono */
     }
 }
+
+
+
 
 @media (max-width: 768px) {
 
@@ -933,10 +938,6 @@ footer {
     }
 
 }
-
-
-
-
 
 
 
