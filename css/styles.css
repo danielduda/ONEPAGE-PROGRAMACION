@@ -1,5 +1,4 @@
-
- /*general*/
+/*general*/
 body,
 html {
     margin: 0;
@@ -309,6 +308,8 @@ footer {
 
 .titulo-seccion {
     text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
 }
 
 #exposiciones .fila {
@@ -398,6 +399,10 @@ footer {
 .modal-dialog {
     border: 2px solid lightblue;
 
+}
+
+.aclaracion {
+    font-size: 13px;
 }
 
 
@@ -497,172 +502,57 @@ footer {
 }
 
 
-
-
-/*Seccion nosotros*/
-
-#blog {
-    padding: 50px 0;
-}
-
-#blog h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-
-.galeria-blog {
-    max-width: 800px;
-    margin: 50px auto;
-}
-
-.galeria-blog .gallery-cell .item {
-    display: flex;
-    align-items: center;
-    margin: 0 80px;
-}
-
-.galeria-blog .gallery-cell img {
-    display: block;
-    width: 100px;
+/*seccion nosotros*/
+/*icono1 matias*/
+.icono1 {
+    display: inline-block;
+    border: 2px solid black;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    border: 4px solid purple;
-    margin-right: 30px;
-
-}
-
-.galeria-blog .gallery-cell h3 {
-    margin-bottom: 7px;
-}
-
-.galeria-blog .gallery-cell p {
-    color: lightblue;
-    font-style: italic;
-    font-family: 'Lato', sans-serif;
-}
-
-#blog button {
-    display: block;
-    width: fit-content;
-    margin: auto;
-    margin-top: 20px;
-    font-size: 20px;
-    border: none;
-    background-color: purple;
-    color: lightblue;
-    padding: 7px 25px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.info h3 {
-    color: purple;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-}
-
-#blog h2 {
-    color: purple;
-    font-family: 'Roboto Slab', serif;
-}
-
-.contenedor-blog {
-
-    background-image: url(../img/2885170.jpg);
-    background-color: rgb(1, 1, 1);
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
-    transition: transform 0.3s ease-in-out;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-image: url(../img/matias.jpeg);
     background-size: cover;
     background-position: center;
-
+    width: 50px;
 }
 
-.info h3:hover {
-    color: bisque;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
+/*icono2 daniel*/
+.icono2 {
+    display: inline-block;
+    border: 2px solid black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-image: url(../img/daniel.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 50px;
 }
 
-.info a {
+.servicio a {
     text-decoration: none;
+    color: #000;
 }
 
-/*estilo contenedor "somos un equipo" */
-.nosotros img {
-    opacity: 80%;
+.servicio a:hover {
+    text-decoration: none;
+    color: rgb(86, 112, 184)
 }
 
-
-.texto-nosotros {
-    font-family: 'Lato', sans-serif;
-    font-size: 25px;
-    color: lightblue;
-}
-
-
-.contenedor-nosotros2 {
-    background-color: rgb(1, 1, 1);
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
-    transition: transform 0.3s ease-in-out;
-    background-size: cover;
-    background-position: center;
-}
-
-.imagen-nosotros2 {
-    background-image: url(../img/2885170.jpg);
-}
-
-
-.contenedor-blog {
-
-    background-image: url(../img/2885170.jpg);
-    background-color: rgb(1, 1, 1);
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
-    transition: transform 0.3s ease-in-out;
-    background-size: cover;
-    background-position: center;
-
-}
-
-/*animacion staff */
-#blog .animated-title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: purple;
-    text-align: center;
-    position: relative;
-    font-family: 'Arial', sans-serif;
-    letter-spacing: 2px;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
-    animation: glow 3s infinite alternate;
-}
-
-@keyframes glow {
-    0% {
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
-    }
-
-    100% {
-        text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.7);
-    }
-}
 
 /* Botón cv estilo y animación */
 .button_cv {
     display: inline-block;
     border-radius: 7px;
     border: none;
-    color: white;
+    background-color: black;
+    color: #87CEEB;
     font-family: inherit;
     text-align: center;
     font-size: 15px;
@@ -670,6 +560,15 @@ footer {
     padding: 1em;
     transition: all 0.4s;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.button_cv:hover {
+    background-color: #87CEEB;
+    color: black;
 }
 
 .button_cv span {
@@ -696,6 +595,7 @@ footer {
     opacity: 4;
     right: 0;
 }
+
 
 
 
@@ -896,15 +796,15 @@ footer {
 
     .imagen-nosotros2 {
         background-size: cover;
-        background-position:bottom left;
-   
+        background-position: bottom left;
+
     }
 
     .contenedor-blog {
 
         background-size: cover;
         background-position: bottom left;
-    
+
     }
 
 
@@ -912,13 +812,13 @@ footer {
         margin-bottom: 7px;
         text-align: center;
     }
-    
+
 
 
     .galeria-blog .gallery-cell p {
         color: lightblue;
         font-style: italic;
-       font-size: 20px;
+        font-size: 20px;
         font-family: 'Lato', sans-serif;
         text-align: center;
     }
