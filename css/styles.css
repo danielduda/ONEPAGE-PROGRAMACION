@@ -326,10 +326,24 @@ footer {
     margin: 10px;
 }
 
+
+#exposiciones #landing-page{
+
+    border: 3px solid red;
+    
+}
+
+
+
+
 #exposiciones .fila .col:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(255, 255, 255, .8);
 }
+
+
+
+
 
 #exposiciones .fila .col .info {
     margin-bottom: 20px;
@@ -369,6 +383,15 @@ footer {
     border-radius: 5px;
 }
 
+.color-precio {
+    color: rgb(86, 112, 184);
+
+}
+.texto-incluye{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 
 
 /*estilo del modal */
@@ -404,7 +427,6 @@ footer {
 .aclaracion {
     font-size: 13px;
 }
-
 
 /*proyectos*/
 
